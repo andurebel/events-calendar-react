@@ -9,9 +9,19 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
-    // { title: "Take out the trash", id: 1 },
-    // { title: "Do some shopping", id: 2 },
-    // { title: "Feed the dog", id: 3 },
+    {
+      title: "Take out the trash",
+      id: 1,
+      date: "2021-11-17",
+      location: "Bucuresti",
+    },
+    {
+      title: "Do some shopping",
+      id: 2,
+      date: "2021-1-23",
+      location: "Pitesti",
+    },
+    { title: "Feed the dog", id: 3, date: "2021-8-12", location: "Constanta" },
   ]);
 
   const addEvent = (event) => {
