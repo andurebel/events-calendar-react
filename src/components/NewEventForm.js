@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./NewEventForm.css";
+import { AiOutlineClose } from "react-icons/ai";
 
-export default function NewEventForm({ addEvent }) {
+export default function NewEventForm({ addEvent, closeModal }) {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState("Bucuresti");
@@ -26,6 +27,9 @@ export default function NewEventForm({ addEvent }) {
 
   return (
     <form className="new-event-form" onSubmit={handleSubmit}>
+      <div className="close__button">
+        <AiOutlineClose onClick={closeModal} />
+      </div>
       <label>
         <span>Event Title:</span>
         <input
