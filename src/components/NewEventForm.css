@@ -1,5 +1,6 @@
 .new-event-form label,
-.new-event-form input {
+.new-event-form input,
+.new-event-form select {
   display: block;
   text-align: left;
   width: 100%;
